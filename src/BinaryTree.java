@@ -2,8 +2,8 @@ public class BinaryTree {
 
     private Node root;
 
-    public BinaryTree(int newValue){
-        this.root = new Node(newValue);
+    public BinaryTree(){
+        this.root = null;
     }
 
     public void addNode(int newValue){
