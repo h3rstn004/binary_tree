@@ -62,7 +62,7 @@ public class BinaryTree {
             return root;
         }
         else {
-            return _binarySearch(value, root);
+            return _findNode(value, root);
         }
     }
 
