@@ -66,7 +66,10 @@ public class BinaryTree {
         }
     }
 
-    private Integer _binarySearch(int value, Node node){
+    private Node _findNode(int value, Node node){
+        if (node == null){
+            return null;
+        }
         if (value == node.getValue()){
             return node.getValue();
         } else if (value > node.getValue()) {
