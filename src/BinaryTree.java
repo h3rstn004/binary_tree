@@ -57,7 +57,7 @@ public class BinaryTree {
         }
     }
 
-    public Integer binarySearch(int value){
+    public Node findNode(int value){
         if (root.getValue() == value){
             return root.getValue();
         }
