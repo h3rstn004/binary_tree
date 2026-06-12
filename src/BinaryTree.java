@@ -77,6 +77,10 @@ public class BinaryTree {
         else {return null;}
     }
 
+    public boolean contains(int value){
+        return findNode(value) != null;
+    }
+
     public void preOrder(){
         if (root != null){
             _preOrder(root);
