@@ -89,4 +89,18 @@ public class BinaryTree {
         }
     }
 
+    public void postOrder(){
+        if (root != null){
+            _postOrder(root);
+        }
+    }
+
+    private void _postOrder(Node node){
+        if (node != null){
+            _postOrder(node.left);
+            _postOrder(node.right);
+            System.out.println(node.getValue());
+        }
+    }
+
 }
