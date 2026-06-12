@@ -78,4 +78,12 @@ public class BinaryTree {
     public void preOrder(){
 
     }
+
+    private void _preOrder(Node node){
+        if (node != null){
+            System.out.println(node.getValue());
+            _preOrder(node.left);
+            _preOrder(node.right);
+        }
+    }
 }
