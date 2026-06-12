@@ -35,7 +35,9 @@ public class BinaryTree {
         }
     }
 
-    public int getRoot(){
+    public Integer getRoot(){
+        if (root == null)
+            return null;
         return root.getValue();
     }
 
