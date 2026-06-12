@@ -74,4 +74,8 @@ public class BinaryTree {
         }
         else {return null;}
     }
+
+    public void preOrder(){
+
+    }
 }
