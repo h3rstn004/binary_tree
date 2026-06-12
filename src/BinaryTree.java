@@ -71,11 +71,13 @@ public class BinaryTree {
             return null;
         }
         if (value == node.getValue()){
-            return node.getValue();
-        } else if (value > node.getValue()) {
-            return _binarySearch(value, node.right);
-        } else if (value < node.getValue()) {
-            return _binarySearch(value, node.left);
+            return node;
+        }
+        if (value > node.getValue()) {
+            return _findNode(value, node.right);
+        }
+        if (value < node.getValue()) {
+            return _findNode(value, node.left);
         }
         else {return null;}
     }
