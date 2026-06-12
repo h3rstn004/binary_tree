@@ -88,4 +88,12 @@ public class BinaryTree {
             _preOrder(node.right);
         }
     }
+
+    private void _preOrder(Node node){
+        if (node != null){
+            System.out.println(node.getValue());
+            _preOrder(node.left);
+            _preOrder(node.right);
+        }
+    }
 }
